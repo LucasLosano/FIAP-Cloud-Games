@@ -1,0 +1,13 @@
+name: Meu primeiro fluxo de trabalho
+on: 
+  push:
+    branches: [test-github-actions]
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Step 1
+      run: echo "Hello world"
